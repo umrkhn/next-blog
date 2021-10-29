@@ -1,0 +1,14 @@
+.Navbar {
+    background-image: var(--primary-color);
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.Navbar__logo {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 3.6rem;
+    margin-left: 200px;
+}
