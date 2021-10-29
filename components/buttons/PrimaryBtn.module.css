@@ -1,0 +1,10 @@
+.PrimaryBtn {
+    background-image: var(--primary-color);
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding: 0.95rem 3.7rem;
+    border: none;
+    color: var(--main-color);
+}
