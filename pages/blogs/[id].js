@@ -2,10 +2,10 @@ import styles from "../../styles/BlogDetails.module.css";
 
 export default function BlogDetails({ image, title, description }) {
     return (
-        <div className={styles.BlogDetails}>
-            <img className={styles.BlogDetails__image} src={image.src} alt={image.alt} />
-            <h2 className={styles.BlogDetails__title}>{title}</h2>
-            <p className={styles.BlogDetails__description}>{description}</p>
+        <div className={styles.container}>
+            <img className={styles.image} src={image} alt="post" />
+            <h2 className={styles.title}>{title}</h2>
+            <p className={styles.description}>{description}</p>
         </div>
     );
 }

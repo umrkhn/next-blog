@@ -1,16 +1,18 @@
-import PrimaryBtn from "../buttons/PrimaryBtn";
+import Link from "next/link";
 import styles from "./BlogCard.module.css";
 
 export default function BlogCard({ image, title, description, id }) {
     return (
-        <div className={styles.BlogCard}>
-            <div className={styles.BlogCard__figure}>
-                <img className={styles.BlogCard__image} src={image.src} alt={image.alt} />
+        <div className={styles.card}>
+            <div className={styles.figure}>
+                <img className={styles.image} src={image} alt="post" />
             </div>
-            <div className={styles.BlogCard__body}>
-                <h2 className={styles.BlogCard__title}>{title}</h2>
-                <p className={styles.BlogCard__description}>{description}</p>
-                <PrimaryBtn path={`/blogs/${id}`} text="details" />
+            <div className={styles.body}>
+                <h2 className={styles.title}>{title}</h2>
+                <p className={styles.description}>{description.slice(0, 150)}...</p>
+                <Link href={`/blogs/${id}`}>
+                    <a className="primary-btn">details</a>
+                </Link>
             </div>
         </div>
     );

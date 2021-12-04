@@ -1,4 +1,6 @@
-.Layout {
-    margin: 0 200px;
+.layout {
+    margin: 0 auto;
     margin-top: 65px;
+    max-width: 1280px;
+    padding: 0 2rem;
 }

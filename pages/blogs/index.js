@@ -3,7 +3,7 @@ import styles from "../../styles/BlogList.module.css";
 
 export default function BlogList({ blogs }) {
     const renderBlogCard = () => blogs.map((blog) => <BlogCard {...blog} key={blog.id} />);
-    return <div className={styles.BlogList}>{renderBlogCard()}</div>;
+    return <div className={styles.container}>{renderBlogCard()}</div>;
 }
 
 export async function getStaticProps() {
